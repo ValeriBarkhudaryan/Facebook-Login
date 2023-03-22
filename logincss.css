@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+}
+
+.main-container {
+    margin-top: 0;
+    border: 0.3px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px;
+    padding: 20px 20px 20px;
+    background-color: white;
+}
+
+
+.facebook-logo {
+    margin-top: 100px;
+    height: 120px;
+}
+
+.log-into {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#email-phone {
+    height: 50px;
+    width: 390px;
+    font-size: 15px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#email-phone::after {
+    color: rgb(240, 236, 236);
+}
+
+#error {
+    color: red;
+    text-align: left;
+    display: none;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#error-icon {
+    position: absolute;
+    width: 20px;
+    left: 1110px;
+    top: 230px;
+    opacity: 0;
+}
+
+#password {
+    margin-top: 10px;
+    height: 50px;
+    width: 390px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    
+}
+
+#log-in-button {
+    height: 50px;
+    width: 410px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(5, 106, 236);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: Arial;
+    transition: .3s;
+}
+
+#log-in-button:hover {
+    background-color: rgb(6, 102, 167);
+}
+
+.forgot {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    cursor: pointer;
+}
+
+.forgot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: 0s;
+}
+
+.forgot:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
