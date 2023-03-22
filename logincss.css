@@ -40,9 +40,11 @@ body {
     border-color: lightgray;
 }
 
-#email-phone::after {
-    color: rgb(240, 236, 236);
+#email-phone:focus::placeholder {
+    color: lightgray;
 }
+
+
 
 #error {
     color: red;
@@ -71,6 +73,10 @@ body {
     border-style: solid;
     border-color: lightgray;
     
+}
+
+#password:focus::placeholder {
+    color: lightgray;
 }
 
 #log-in-button {
